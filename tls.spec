@@ -22,7 +22,7 @@ BuildRequires:  tcl-devel >= 8.4
 Summary:        Tcl Binding for the OpenSSL Library
 License:        BSD-3-Clause
 Group:          Development/Libraries/Tcl
-Version:        1.7.11
+Version:        1.7.12
 Release:        0
 Url:            http://core.tcl.tk/tcltls/index
 Source0:        tcl%name-%version.tar.gz
