@@ -53,17 +53,6 @@ CFLAGS="$RPM_OPT_FLAGS" \
 	--with-tcl=%_libdir
 make
 
-%check
-# Disable for now, because changed defaults in openssl make it fail
-#exit 0
-cat > known-failures <<EOF
-ciphers-1.4
-ciphers-1.3
-tls-bug58-1.0
-EOF
-make test 2>&1 | tee testresults
-grep FAILED testresults | grep -Fqvf known-failures && exit 1
-
 %install
 make install \
 	DESTDIR=%buildroot \
