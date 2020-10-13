@@ -4,7 +4,7 @@
 #package require tls
 
 set arch "x86_64"
-set base "1.7.21"
+set base "1.7.22"
 set fileurl "https://core.tcl-lang.org/tcltls/uv/tcltls-$base.tar.gz"
 
 #http::register https 443 [list ::tls::socket -ssl3 0 -ssl2 0 -tls1 1]
